@@ -1,3 +1,10 @@
+#' @rdname lrt
+#'
+#' @export
+#'
+#' @method summary aLR
+#' 
+
 summary.aLR <-
 function(object,...){
     
@@ -10,6 +17,7 @@ function(object,...){
     cat("--------------------------------------------------------------------\n")
     cat("Parameter estimates: \n")
     print(object$itempar)
+    cat("SE estimates: \n")
     print(object$item_se)
     
   }

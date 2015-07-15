@@ -1,3 +1,13 @@
+#' @rdname lrt
+#'
+#' @export
+#'
+#' @method print aLR
+#' @param x Object of class aLR
+#' @param \ldots further arguments
+
+
+
 print.aLR <-
 function(x,...){
     
