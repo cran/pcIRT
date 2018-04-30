@@ -1,13 +1,13 @@
-#' Data set B5PO-R personality questionnaire
+#' Data set extraversion 
 #'
-#' This object contains data from the B5PO-R (Kubinger and Siptroth, in prep.), the revised version of the B5PO (Holocher-Ertl, Kubinger and Menghin, 2003). The items are from the extraversion scale.
-#'#'
+#' This object contains data from an extraversion scale . The data set consists of 8 items and 150 persons.
+#'
 #' @name extraversion
 #' @docType data
-#' @format workspace
+#' @format A matrix with 8 variables and 150 observations.
 #' @source Study
 #' @keywords datasets
-#' @references Holocher-Ertl, S., Kubinger, K. D. and Menghin, S. (2003). Big Five Plus One Persoenlichkeitsinventar (B5PO). Moedling: Wiener Testsystem/Schuhfried.
+#'
 NULL
 
 
@@ -17,7 +17,7 @@ NULL
 #' Data set META reasoning test.
 #'
 #' This object contains data from the reasoning test 'META' by Gatternig and Kubinger (1994). The test includes 11 encoding tasks.
-#'#'
+#'
 #' @name reason.test
 #' @docType data
 #' @format A matrix with 22 variables and 380 observations. Variables 'I1' to 'I11' contain the responses to the eleven items, 'BT1' to 'BT11' the response times for each item in seconds.
@@ -52,8 +52,9 @@ NULL
 #' @name pcIRT-package
 #' @aliases pcIRT-package pcIRT
 #' @docType package
+#' @useDynLib pcIRT, .registration = TRUE
 #' @author Christine Hohensinn Maintainer: Christine Hohensinn
-#' <christine.hohensinn@@univie.ac.at>
+#' <research@@christinehohensinn.at>
 #' @seealso \code{\link{MPRM}} \code{\link{CRSM}}
 #' @references Andersen, E. B. (1995). Polytomous Rasch models and their
 #' estimation. In G. H. Fischer and I. Molenaar (Eds.). Rasch Models -
@@ -61,6 +62,9 @@ NULL
 #'
 #' Fischer, G. H. (1974). Einfuehrung in die Theorie psychologischer Tests
 #' [Introduction to test theory]. Bern: Huber.
+#'
+#' Hohensinn, C. (2018). pcIRT: An R Package for Polytomous and Continuous Rasch Models. 
+#' Journal of Statistical Software, Code Snippets, 84(2), 1-14. doi:10.18637/jss.v084.c02
 #'
 #' Mueller, H. (1987). A Rasch model for continuous ratings. Psychometrika, 52,
 #' 165-181.
