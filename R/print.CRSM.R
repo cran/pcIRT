@@ -1,6 +1,5 @@
 #' @rdname crsm
 #'
-#' @export
 #'
 #' @method print CRSM
 #'

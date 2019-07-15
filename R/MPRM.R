@@ -7,7 +7,7 @@
 #'
 #' Parameter estimations is done by CML method.
 #'
-#'#' The parameters of the multidimensional polytomous Rasch model (Rasch, 1961)
+#' The parameters of the multidimensional polytomous Rasch model (Rasch, 1961)
 #' are estimated by CML estimation. For the CML estimation no assumption on the
 #' person parameter distribution is necessary. Furthermore linear restrictions can be set on the
 #' multidimensional polytomous Rasch model. Item category parameters can be set
@@ -72,7 +72,6 @@
 #' Rasch, G. (1961). On general laws and the meaning of measurement in
 #' psychology, Proceedings Fourth Berekely Symposium on Mathematical
 #' Statistiscs and Probability 5, 321-333.
-#' @keywords multidimensional polytomous Rasch model linear restriction
 #'
 #' @useDynLib pcIRT
 #' @importFrom Rcpp evalCpp

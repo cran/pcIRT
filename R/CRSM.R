@@ -1,13 +1,13 @@
-#' Estimation of Continuous Rating Scale Model (Mueller, 1987)
+#' Estimation of continuous rating scale model (Mueller, 1987)
 #'
-#' Estimation of the Rating Scale Model for continuous data by Mueller (1987).
+#' Estimation of the rating scale model for continuous data by Mueller (1987).
 #'
 #' \deqn{P_{vi}(a \leq X \leq b) = \frac{\int_a^b exp[x \mu + x(2c-x) \theta]
 #' dx}{\int_{c-\frac{d}{2}}^{c+\frac{d}{2}} exp[t \mu + t(2c-t) \theta] dt}}
 #'
 #' Parameters are estimated by a pairwise conditional likelihood estimation (a pseudo-likelihood approach, described in Mueller, 1999).
 #'
-#' The parameters of the Continuous Rating Scale Model are estimated by a pairwise cml approach using Newton-Raphson iterations for optimizing.
+#' The parameters of the continuous rating scale model are estimated by a pairwise cml approach using Newton-Raphson iterations for optimizing.
 #'
 #' @aliases CRSM summary.CRSM print.CRSM
 #' @param data Data matrix or data frame; rows represent observations
@@ -39,20 +39,16 @@
 #' Mueller, H. (1999). Probabilistische Testmodelle fuer diskrete und
 #' kontinuierliche Ratingskalen. [Probabilistic models for discrete and
 #' continuous rating scales]. Bern: Huber.
-#' @keywords continuous rating scale model
-#' @examples
-#'
-#' #estimate CRSM item parameters
-#' data(analog)
-#' res_crsm <- CRSM(extraversion, low=-10, high=10)
-#'
-#' summary(res_crsm)
-#'
-#' @export CRSM
+#' 
 #' @rdname crsm
+ 
+
+
+
 CRSM <-
 function(data, low, high, start, conv=0.0001){
-
+cat("Warning: the function CRSM may lead to incorrect estimation results. The function is currently checked")
+  
 call <- match.call()
 
 if(is.data.frame(data)) {data <- as.matrix(data)}
@@ -93,8 +89,34 @@ S4n <- function(t, paraI) {t^4* exp(-(t/2)*paraI[1] - (t^2/2)*paraI[2])}
 parlist <- lapply(1:ncol(combis), function(m) {
   zwi <- data_p[,c(combis[1,m],combis[2,m])]
   zwi2 <- zwi[rowSums(zwi)!=0 & rowSums(zwi)!=2,, drop=FALSE] #delete extreme scores
-
+  #zwi2 <- zwi
+  
+  #if(any(rowSums(zwi)==0 | rowSums(zwi)==2)){
+  #  if(any(rowSums(zwi) ==0)){
+  #    indl <- which(rowSums(zwi) == 0)
+  #    for(l in indl){
+  #      posi <- sample(c(1,2), size = 1)
+  #      zwi2[l, posi] <- zwi[l, posi]+0.001
+  #    }
+  #  }
+  #  if(any(rowSums(zwi)==2)){
+  #    indh <- which(rowSums(zwi) == 2)
+  #      for(p in indh){
+  #        posi <- sample(c(1,2), size = 1)
+  #        zwi2[p, posi] <- zwi[p, posi]-0.001
+  #      }
+  #    }
+  #  
+  #}
+  
   uij <- zwi2[,1]-zwi2[,2]
+  
+  #if(any(uij == 0)){
+  #  we <- which(uij == 0)
+  #  zwi2[we,1] <- zwi2[we,1] + 0.001
+  #  uij <- zwi2[,1]-zwi2[,2]
+  #  }
+  
   sij <- sum(uij)
 
   bound       <- round(1-abs(rowSums(zwi2)-1),6) #interval width

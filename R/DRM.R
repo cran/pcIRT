@@ -26,7 +26,6 @@
 #' [Introduction to test theory]. Bern: Huber.
 #'
 #' Rasch, G. (1960). Probabalistic models for some intelligence and attainment tests. Danmarks paedagogiske institut.
-#' @keywords continuous rating scale model
 #'
 #' @rdname drm
 #'

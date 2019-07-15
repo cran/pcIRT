@@ -59,7 +59,7 @@ The functions allows setting linear restrictions on item category parameters \eq
 \details{
 Parameter estimations is done by CML method.
 
-#' The parameters of the multidimensional polytomous Rasch model (Rasch, 1961)
+The parameters of the multidimensional polytomous Rasch model (Rasch, 1961)
 are estimated by CML estimation. For the CML estimation no assumption on the
 person parameter distribution is necessary. Furthermore linear restrictions can be set on the
 multidimensional polytomous Rasch model. Item category parameters can be set
@@ -133,9 +133,3 @@ Statistiscs and Probability 5, 321-333.
 \author{
 Christine Hohensinn
 }
-\keyword{Rasch}
-\keyword{linear}
-\keyword{model}
-\keyword{multidimensional}
-\keyword{polytomous}
-\keyword{restriction}

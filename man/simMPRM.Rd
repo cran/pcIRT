@@ -59,8 +59,3 @@ Statistiscs and Probability 5, 321-333.
 \author{
 Christine Hohensinn
 }
-\keyword{Rasch}
-\keyword{model}
-\keyword{multidimensional}
-\keyword{polytomous}
-\keyword{simulation}

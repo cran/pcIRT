@@ -49,6 +49,3 @@ psychologischer Tests [Introduction to test theory]. Bern: Huber.
 \author{
 Christine Hohensinn
 }
-\keyword{Rasch}
-\keyword{model}
-\keyword{simulation}

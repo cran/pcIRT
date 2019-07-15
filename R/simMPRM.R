@@ -27,7 +27,6 @@
 #' Rasch, G. (1961). On general laws and the meaning of measurement in
 #' psychology, Proceedings Fourth Berekely Symposium on Mathematical
 #' Statistiscs and Probability 5, 321-333.
-#' @keywords multidimensional polytomous Rasch model simulation
 #' @examples
 #' 
 #' #set item parameters

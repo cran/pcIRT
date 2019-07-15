@@ -5,8 +5,6 @@
 \alias{person_par.CRSM}
 \alias{person_par.MPRM}
 \alias{person_par}
-\alias{person_par.MPRM}
-\alias{person_par.CRSM}
 \title{Estimation of person parameters}
 \usage{
 \method{person_par}{CRSM}(object, ...)
@@ -42,17 +40,6 @@ model.
 The estimation is performed by Maximum Likelihood Estimation. Thus,
 parameters for extreme scores are not calculated!
 }
-\examples{
-
-#estimate CRSM for the first four items
-data(analog)
-res_cr <- CRSM(extraversion, low=-10, high=10)
-
-#estimate person parameters for CRSM
-pp <- person_par(res_cr)
-
-
-}
 \references{
 Fischer, G. H. (1974). Einfuehrung in die Theorie
 psychologischer Tests [Introduction to test theory]. Bern: Huber.
@@ -67,5 +54,3 @@ continuous rating scales]. Bern: Huber.
 \author{
 Christine Hohensinn
 }
-\keyword{parameter}
-\keyword{person}

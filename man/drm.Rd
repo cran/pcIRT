@@ -66,7 +66,3 @@ Rasch, G. (1960). Probabalistic models for some intelligence and attainment test
 \author{
 Christine Hohensinn
 }
-\keyword{continuous}
-\keyword{model}
-\keyword{rating}
-\keyword{scale}

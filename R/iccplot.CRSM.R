@@ -1,6 +1,5 @@
 #'@rdname iccplot
 #'@method iccplot CRSM
-#'@export
 
 iccplot.CRSM <- function(object, items="all",...){
 

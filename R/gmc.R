@@ -28,16 +28,6 @@
 #' Wilmington: Wide Range Inc.
 #'
 #' @rdname gmc
-#' @keywords graphical model check
-#' @examples
-#'
-#' #estimate CRSM for the first three items
-#' data(analog)
-#' res_cr <- CRSM(extraversion, low=-10, high=10)
-#'
-#' #graphical model check for CRSM for the first three items with default split
-#' #criterion score
-#' gmc(res_cr)
 #'
 #'
 #' @export gmc

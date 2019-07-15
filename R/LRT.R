@@ -27,7 +27,6 @@
 #' 
 #' Fischer, G. H. (1974). Einfuehrung in die Theorie psychologischer Tests
 #' [Introduction to test theory]. Bern: Huber.
-#' @keywords Likelihood Ratio test model test
 #' 
 #' @rdname lrt
 #' 

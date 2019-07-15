@@ -7,10 +7,6 @@
 \alias{LRT}
 \alias{summary.aLR}
 \alias{print.aLR}
-\alias{LRT.MPRM}
-\alias{LRT.DRM}
-\alias{print.aLR}
-\alias{summary.aLR}
 \title{Computes Andersen's Likelihood Ratio Test for the multidimensional
 polytomous Rasch model}
 \usage{
@@ -80,7 +76,3 @@ Fischer, G. H. (1974). Einfuehrung in die Theorie psychologischer Tests
 \author{
 Christine Hohensinn
 }
-\keyword{Likelihood}
-\keyword{Ratio}
-\keyword{model}
-\keyword{test}

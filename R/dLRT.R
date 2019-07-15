@@ -15,7 +15,6 @@
 #' @seealso \code{\link{MPRM}} \code{\link{LRT}}
 #' @references Fischer, G. H. (1974). Einfuehrung in die Theorie
 #' psychologischer Tests [Introduction to test theory]. Bern: Huber.
-#' @keywords dimensionality model test
 #' 
 #' @export
 #' @rdname dLR

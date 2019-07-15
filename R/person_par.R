@@ -23,18 +23,8 @@
 #' Mueller, H. (1999). Probabilistische Testmodelle fuer diskrete und
 #' kontinuierliche Ratingskalen. [Probabilistic models for discrete and
 #' continuous rating scales]. Bern: Huber.
-#' @keywords person parameter
 #'
 #' @rdname perspar
-#'
-#' @examples
-#'
-#' #estimate CRSM for the first four items
-#' data(analog)
-#' res_cr <- CRSM(extraversion, low=-10, high=10)
-#'
-#' #estimate person parameters for CRSM
-#' pp <- person_par(res_cr)
 #'
 #'
 #' @export person_par
